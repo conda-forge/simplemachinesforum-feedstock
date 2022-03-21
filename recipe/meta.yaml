@@ -31,7 +31,8 @@ test:
     - pip check
   requires:
     - pip
-
+    - bs4
+    
 about:
   home: https://github.com/oliver-zehentleitner/python-simplemachinesforum
   summary: Python request API to simplemachinesforum
