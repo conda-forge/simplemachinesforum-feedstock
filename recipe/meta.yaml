@@ -1,5 +1,5 @@
 {% set name = "simplemachinesforum" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplemachinesforum-{{ version }}.tar.gz
-  sha256: 89699e282621b9c53ccf333149ec5a6fa51a101632a24eff69952cf2b320c5c5
+  sha256: cf5e3d122781ff76250a6810bfd4f7db22a544a95fef2fb8a606bb8fcc6f5c50
 
 build:
   number: 0
@@ -32,7 +32,7 @@ test:
   requires:
     - pip
     - bs4
-    
+
 about:
   home: https://github.com/oliver-zehentleitner/python-simplemachinesforum
   summary: Python request API to simplemachinesforum
