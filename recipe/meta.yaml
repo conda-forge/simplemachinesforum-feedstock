@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplemachinesforum-{{ version }}.tar.gz
-  sha256: 
+  sha256: cf5e3d122781ff76250a6810bfd4f7db22a544a95fef2fb8a606bb8fcc6f5c50
 
 build:
   number: 0
