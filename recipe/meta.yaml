@@ -1,5 +1,5 @@
 {% set name = "simplemachinesforum" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplemachinesforum-{{ version }}.tar.gz
-  sha256: cf5e3d122781ff76250a6810bfd4f7db22a544a95fef2fb8a606bb8fcc6f5c50
+  sha256: 23d29eb363c4f77eefdf670a6df66f88ea33128a53d422ab80c3fab150e9a5ed
 
 build:
   number: 0
