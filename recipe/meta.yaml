@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplemachinesforum-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/simplemachinesforum-{{ version }}.tar.gz
   sha256: 23d29eb363c4f77eefdf670a6df66f88ea33128a53d422ab80c3fab150e9a5ed
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.0
+    - python {{ python_min }}
   run:
-    - python >=3.0
+    - python >={{ python_min }}
     - requests
     - bs4
 
@@ -32,6 +32,7 @@ test:
   requires:
     - pip
     - bs4
+    - python {{ python_min }}
 
 about:
   home: https://github.com/oliver-zehentleitner/python-simplemachinesforum
